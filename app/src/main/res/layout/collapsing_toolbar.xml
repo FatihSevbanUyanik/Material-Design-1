@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="256dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:title="Material Design"
+    app:subtitle="Hello World"
+    app:titleTextColor="@android:color/white"
+    app:subtitleTextColor="@android:color/darker_gray"
+    android:background="@color/colorPrimary"
+    android:id="@+id/my_toolbar"
+    app:logo="@android:drawable/btn_radio">
+</android.support.v7.widget.Toolbar>

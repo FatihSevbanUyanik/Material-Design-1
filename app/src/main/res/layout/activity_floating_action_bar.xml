@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".FloatingActionBar.FloatingActionBarActivity">
+
+        <include
+            android:id="@+id/include4"
+            layout="@layout/my_toolbar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+        </include>
+
+        <LinearLayout
+            android:layout_width="334dp"
+            android:layout_height="148dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/include4"
+            app:layout_constraintVertical_bias="0.279">
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="showSnackBarWithAction"
+                android:text="SHOW SNACKBAR WITH ACTION"
+                tools:text="showSnackBarWithAction" />
+
+            <Button
+            android:id="@+id/showSimpleSnackBarButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="showSimpleSnackBarButton"
+            android:text="Show Simple SnackBar Button" />
+        </LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:onClick="floatingActionBarPressed"
+        android:src="@android:drawable/ic_input_add"
+        android:tint="@color/colorAccent"
+        app:fabSize="normal"
+        android:layout_margin="8dp"
+        android:layout_gravity="bottom|right">
+    </android.support.design.widget.FloatingActionButton>
+
+</android.support.design.widget.CoordinatorLayout>
